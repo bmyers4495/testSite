@@ -14,6 +14,10 @@ html{
 
 #jumboTronContainer2 .jumbotron{
   margin-top: 10%;
-  background-color: #e9ecef54;
+  background-color: #e9ecef95;
+
+}
+#jumboTronContainer2 .jumbotron p{
+  text-indent: 2em;
 
 }
