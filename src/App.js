@@ -13,8 +13,8 @@ class App extends Component {
           <NavBar />
           <Router>
               <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/about" component={About} />
+                  <Route exact path="/testSite/" component={Home} />
+                  <Route path="/testSite/about/" component={About} />
               </Switch>
           </Router>
       </React.Fragment>
