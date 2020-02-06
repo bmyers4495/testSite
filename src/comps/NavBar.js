@@ -9,7 +9,7 @@ class MyBar extends Component {
   render() {
     return (
       <Navbar bg = "light"
-      expand = "lg" >
+      expand = "md" >
       <Navbar.Brand href = "#home" >
           <img alt='icon' src={require('../assets/favicon.ico')}/>
           Cultivating Hearts
@@ -21,6 +21,8 @@ class MyBar extends Component {
       <Nav.Link href = "/about" > About < /Nav.Link>
       <Nav.Link href = "#contact" > Contact < /Nav.Link>
       <Nav.Link href = "#testimonials"  disabled> Testimonials < /Nav.Link>
+      <Nav.Link href = "#testimonials"  disabled> Donate Now< /Nav.Link>
+      <Nav.Link href = "https://www.facebook.com/pg/Cultivating-Hearts-of-Tomorrow-663692047383420/about/?ref=page_internal"> Facebook < /Nav.Link>
       </Nav>
       </Navbar.Collapse>
       </Navbar >
