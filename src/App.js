@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { Home } from './comps/Home';
 import About from './comps/About';
 import NavBar from './comps/NavBar';
@@ -11,13 +11,11 @@ class App extends Component {
     return (
       <React.Fragment>
           <NavBar />
-          <Router>
-              <Switch>
+          <div>
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+          <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
+          </div>
 
-                  <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-                  <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
-              </Switch>
-          </Router>
       </React.Fragment>
     );
   }
