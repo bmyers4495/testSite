@@ -1,13 +1,19 @@
 body{
-  background-image: url('../assets/background_image.png');
+  background-image: url('../assets/background_image-xsm.jpg');
   background-size: cover;
   background-position: center;
 }
 html{
   height: 100%
 }
-#jumboTronContainer .jumbotron{
+#jumboTronContainer1 .jumbotron{
   margin-top: 20%;
+  background-color: #e9ecef95;
+
+}
+
+#jumboTronContainer2 .jumbotron{
+  margin-top: 10%;
   background-color: #e9ecef54;
 
 }
