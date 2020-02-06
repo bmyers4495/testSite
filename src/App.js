@@ -13,8 +13,12 @@ class App extends Component {
           <NavBar />
           <Router>
               <Switch>
+
                   <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
                   <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
+                  <Route exact path="/testSite/" component={Home} />
+                  <Route path="/testSite/about/" component={About} />
+
               </Switch>
           </Router>
       </React.Fragment>
