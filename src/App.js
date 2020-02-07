@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import { Home } from './comps/Home';
 import About from './comps/About';
 import NavBar from './comps/NavBar';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 // import Contact from './comps/Contact';
 // import Testomonials from './comps/Testomonials';
 
@@ -10,11 +10,13 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-          <NavBar />
-          <div>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route path={process.env.PUBLIC_URL + '/about'} component={About} />
-          </div>
+        <Router>
+            <NavBar />
+            <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/else/" component={About} />
+            </Switch>
+        </Router>
 
       </React.Fragment>
     );
